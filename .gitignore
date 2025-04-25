@@ -1,0 +1,28 @@
+# Database files
+db.sqlite3
+*.DAT
+
+# Log files
+debug.log
+
+# Sample data
+sample_data.xml
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+.env.local
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db 
