@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SampleData>
+    <AccountGroups>
+        <AccountGroup>
+            <name>Assets</name>
+            <is_active>true</is_active>
+        </AccountGroup>
+        <AccountGroup>
+            <name>Liabilities</name>
+            <is_active>true</is_active>
+        </AccountGroup>
+        <AccountGroup>
+            <name>Income</name>
+            <is_active>true</is_active>
+        </AccountGroup>
+        <AccountGroup>
+            <name>Expenses</name>
+            <is_active>true</is_active>
+        </AccountGroup>
+    </AccountGroups>
+
+    <Accounts>
+        <Account>
+            <name>Cash</name>
+            <code>1001</code>
+            <account_type>ASSET</account_type>
+            <group>Assets</group>
+            <is_active>true</is_active>
+            <gst_number></gst_number>
+            <pan_number></pan_number>
+        </Account>
+        <Account>
+            <name>Bank</name>
+            <code>1002</code>
+            <account_type>ASSET</account_type>
+            <group>Assets</group>
+            <is_active>true</is_active>
+            <gst_number></gst_number>
+            <pan_number></pan_number>
+        </Account>
+        <Account>
+            <name>Sales</name>
+            <code>4001</code>
+            <account_type>INCOME</account_type>
+            <group>Income</group>
+            <is_active>true</is_active>
+            <gst_number></gst_number>
+            <pan_number></pan_number>
+        </Account>
+        <Account>
+            <name>Purchase</name>
+            <code>5001</code>
+            <account_type>EXPENSE</account_type>
+            <group>Expenses</group>
+            <is_active>true</is_active>
+            <gst_number></gst_number>
+            <pan_number></pan_number>
+        </Account>
+    </Accounts>
+
+    <PurchaseVouchers>
+        <PurchaseVoucher>
+            <voucher_number>PV001</voucher_number>
+            <date>2024-03-01</date>
+            <voucher_type>PURCHASE</voucher_type>
+            <party>Purchase</party>
+            <total_amount>1000.00</total_amount>
+            <gst_amount>180.00</gst_amount>
+            <net_amount>1180.00</net_amount>
+            <narration>Sample purchase</narration>
+            <ItemEntries>
+                <ItemEntry>
+                    <item_name>Item 1</item_name>
+                    <quantity>10</quantity>
+                    <rate>100.00</rate>
+                    <amount>1000.00</amount>
+                    <hsn_code>1234</hsn_code>
+                    <gst_rate>18.00</gst_rate>
+                    <gst_amount>180.00</gst_amount>
+                </ItemEntry>
+            </ItemEntries>
+            <BillSundries>
+                <BillSundry>
+                    <name>Freight</name>
+                    <amount>100.00</amount>
+                    <gst_rate>18.00</gst_rate>
+                    <gst_amount>18.00</gst_amount>
+                </BillSundry>
+            </BillSundries>
+            <AccountEntries>
+                <AccountEntry>
+                    <account>Purchase</account>
+                    <entry_type>DEBIT</entry_type>
+                    <amount>1180.00</amount>
+                    <narration>Purchase entry</narration>
+                </AccountEntry>
+                <AccountEntry>
+                    <account>Bank</account>
+                    <entry_type>CREDIT</entry_type>
+                    <amount>1180.00</amount>
+                    <narration>Bank payment</narration>
+                </AccountEntry>
+            </AccountEntries>
+        </PurchaseVoucher>
+    </PurchaseVouchers>
+</SampleData> 
